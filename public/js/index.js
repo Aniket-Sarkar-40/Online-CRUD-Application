@@ -1,5 +1,5 @@
 // require("dotenv").config();
-const url = `http://online-crud-application.herokuapp.com/api`;
+const url = `https://online-crud-application.herokuapp.com/api`;
 
 // let secKey = process.env.SECRET_KEY;
 // console.log(secKey);
