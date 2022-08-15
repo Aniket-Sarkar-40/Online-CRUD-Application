@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,100&family=Merriweather:ital,wght@1,300&family=Piazzolla&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Piazzolla", serif;
+}
+
+:root {
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+button {
+    padding: 0.5rem 1.5rem;
+    border: 0px solid;
+    border-radius: 2rem;
+    background-color: rgb(234, 233, 233);
+    color: var(--main-bg);
+    font-size: 1.5rem;
+    box-shadow: 0 8px 6px -6px #000;
+}
+button:hover {
+    box-shadow: 0 8px 6px -6px var(--main-color);
+  }
+
+/*imported*/
+
+.txt{
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.txt p{
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+
+.txt h1{
+    font-size: 3.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.txt h1 span{
+    color: var(--main-color);
+}
+
+.image{
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.myPic{
+    height: 30rem;
+}
+
+
+.mx-5{
+    margin: 10px 20px;
+}
+
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.align-center{
+    align-items: center;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-center{
+    justify-content: center;
+}
+.mx-auto{
+    margin: 0 auto;
+}
+
+
+footer{
+    background-color: var(--main-bg);
+    /* width: 100vw; */
+    height: 4rem;
+    margin-top: auto;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+/*responsive*/
+@media (max-width: 768px){
+    .main_header_left , .about-right{
+        height: auto;
+        margin: 5rem 0 ;
+    }
+    .main_header_right , .about-left{
+        height: auto;
+        margin: 3rem 0 0; 
+    }
+
+    .main_header_right figure img{
+        height: 37rem;
+    }
+    .temp_form{
+        width: 100%;
+    }
+    .tempInformation{
+        width: 95%;
+    }
+    .main_layer .middle_layer p, .main_layer .middle_layer .fa{
+        font-size: 5rem;
+    }
+}

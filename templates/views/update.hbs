@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>head}}
+    <title>home</title>
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="container my-5">
+        <form class="shadow-lg p-3" action="/{{Data._id}}/update" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" value='{{Data.name}}'  placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone No.</label>
+                <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" value='{{Data.phoneNumber}}' placeholder="Enter your phone no.">
+            </div>
+            <div class="form-group">
+                <label for="eamil">Email</label>
+                <input type="email" class="form-control" id="email" name="Email" value='{{Data.Email}}' placeholder="Enter your email address">
+            </div>
+            <div class="form-group">
+                <label for="Hobbies">Hobbies</label>
+                <textarea class="form-control" id="Hobbies" name="Hobbies" value='{{Data.Hobbies}}' rows="3">{{Data.Hobbies}}</textarea>
+            </div>
+            <button type="submit" id="updateButton" class="btn btn-info">Update</button>
+
+        </form>
+
+
+
+    </div>
+
+    
+    {{>foot}}
+</body>
+
+</html>
