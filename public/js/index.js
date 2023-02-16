@@ -1,6 +1,6 @@
 // require("dotenv").config();
 // const url = `https://online-crud-application.herokuapp.com/api`;
-const url = `http://localhost:8000/api`;
+const url = `https://online-crud-application.vercel.app/api`;
 
 // let secKey = process.env.SECRET_KEY;
 // console.log(secKey);
